@@ -3,6 +3,9 @@
 
 kosciaajStarbucks::kosciaajStarbucks(){
 }
+    void kosciaajStarbucks::allBucks(){
+		
+	}
 
 	void kosciaajStarbucks::build(Entry* c, int n){
 		unsortedArray = new Entry[n];
