@@ -141,6 +141,7 @@ void HW04App::draw()
 	else if (!display) {
         gl::clear(Color(0,0,0));
 	}
+	//tried placeing dots at starbucks location in the most basic way imaginable. 
 	for (int i=0; i < dataSize; i++) {
 		gl::color(ColorA(0.0,0.5,0.0,0.5f));
 		gl::drawSolidCircle(Vec2f(first[i].x*getWindowSize().x,(1-first[i].y)*getWindowSize().y),1);
