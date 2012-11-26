@@ -6,7 +6,7 @@ kosciaajStarbucks::kosciaajStarbucks(){
     void kosciaajStarbucks::allBucks(){
 		
 	}
-
+	//Extremely basic build method
 	void kosciaajStarbucks::build(Entry* c, int n){
 		unsortedArray = new Entry[n];
 	for(int i = 0; i < n; i++){
@@ -14,6 +14,7 @@ kosciaajStarbucks::kosciaajStarbucks(){
 	}
 	size = n;
 	}
+	//Extremely basic search method that uses a mathmatic formula. 
 	Entry* kosciaajStarbucks::getNearest(double x, double y){
 		Entry* close = new Entry();
 	    Entry temp = unsortedArray[0];

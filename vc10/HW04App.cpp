@@ -49,7 +49,7 @@ void HW04App::prepareSettings(Settings *settings){
 	settings->setFullScreen(false);
 	display = true;
 }
-
+//Loads the map, declares some variables and objects, and calls getNearest on a test point. 
 void HW04App::setup()
 { 
 	USMap = gl::Texture(loadImage( "../resources/USMap.jpg"));
@@ -99,7 +99,7 @@ Entry* HW04App::buildArray(){
     return locations;
 }
 
-
+//tried to place a circle where the mouse is clicked, doesn't work. 
 void HW04App::mouseDown( MouseEvent event )
 {	
 	uint8_t* dataArray = (*mySurface).getData();
@@ -108,7 +108,7 @@ void HW04App::mouseDown( MouseEvent event )
 
 	placeCircle(dataArray,x,y);
 }
-
+//trying to write a placeCircle method for Mousedown, doesn't work. 
 void HW04App::placeCircle(uint8_t* pixels, int x, int y){
 for (int j = x; j <= 2*radius && j < kTextureSize; j++){
 	for(int i = x; i <= radius*2; i++){
