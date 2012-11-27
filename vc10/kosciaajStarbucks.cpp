@@ -14,7 +14,7 @@ kosciaajStarbucks::kosciaajStarbucks(){
 	}
 	size = n;
 	}
-	//Extremely basic search method that uses a mathmatic formula. 
+	//Extremely basic search method that uses a mathmatic formula, mostly taken from Marsden. 
 	Entry* kosciaajStarbucks::getNearest(double x, double y){
 		Entry* close = new Entry();
 	    Entry temp = unsortedArray[0];

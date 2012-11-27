@@ -63,7 +63,7 @@ void HW04App::setup()
     Entry* nearest = find->getNearest(.1, .9);
 	console() << nearest->identifier << "(" << nearest->x << ", " << nearest->y << ")" << endl;
 }
-
+//Mostly taken from Marsden, reworked to operate with my code. 
 Entry* HW04App::buildArray(){
 	string name;
     double cordX, cordY;
